@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+<title>Odrzucone</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+.center {
+    margin: 0;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <div class="menu">
+        <header>
+            <h2>NightBlock</h2>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+<div class="welcome">
+<h2>Musisz zaakceptować regulamin aby zagrać</h2>
+<input class="button_allow" type="submit" value="Wróc na strone główną" name="btn_close" id="btn_close" onclick="return redirect_home();" />
+<script>
+    function redirect_home() {
+    window.location = 'index.html';
+    window.close();
+    }
+
+</script>
+</div>
+<div class="footer">
+    <footer>
+        <p>Nightblock.2137.tk 2022<br>
+        <p>Zakaz kopiowania strony bez pozwolenia<p>
+        <a href="mailto:contact@azordon.cf">Kontact</a></p>
+      </footer>
+</body>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+<title>NightBlock</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="menu">
+        <header>
+            <h2>NightBlock</h2>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+<div class="welcome">
+<h1>Witaj na serwerze NightBlock</h1>
+<p>Polski serwer survival na wersji 1.17.1</p>
+</div>
+<div class="buttons">
+<button class="button_play" onclick="openpopup()">Zagraj Teraz</button>
+<button class="button_info" onclick="redirect_info()">Info</button>
+<script>
+    function redirect_info() {
+    window.location = 'info.html';
+    window.close();
+    }
+
+</script>
+</div>
+<div class="popup" id="popup">
+<h2>Zanim zagrasz musisz zaakceptować regulamin</h2>
+<h2></h2>
+<h2>Gracz nie może</h2>
+<p>1.0 Przeklinać na czacie</p>
+<p>1.1 Kradnąć rzeczy że skrzynek</p>
+<p>1.2 Jeżeli moderator nadużywa praw zgłoś go do admina</p>
+<p>1.3 GRIEFOWAĆ!</p>
+<p>1.4 DDOSOWAĆ KOGOS!</p>
+<p>1.5 DDOSOWAĆ SERWERA</p>
+<p>1.6 Wychodzić z gry podczas walki</p>
+<h2></h2>
+<h2>Admin/Moderator Nie może</h2>
+<p>2.0 Banować bez podstawy</p>
+<p>2.1 Sprawdzać bez podstawy </p>
+<input class="button_allow" type="submit" value="Akceptuje" name="btn_close" id="btn_close" onclick="return open_window();" />
+<input class="button_decline" type="submit" value="Nie Akceptuje" name="btn_close" id="btn_close" onclick="return close_window();" />
+<script>
+    function open_window() {
+    window.location = 'join.html';
+    window.close();
+    }
+
+    function close_window() {
+    window.location = 'declined.html';
+    window.close();
+    }
+</script>
+</div>
+
+<script>
+let popup = document.getElementById("popup");
+
+function openpopup(){
+ popup.classList.add("open-popup");
+}
+
+</script>
+<div class="footer">
+<footer>
+    <p>Nightblock.2137.tk 2022<br>
+    <p>Zakaz kopiowania strony bez pozwolenia<p>
+    <a href="mailto:contact@azordon.cf">Kontact</a></p>
+  </footer>
+</div>
+</body>
+</head>
