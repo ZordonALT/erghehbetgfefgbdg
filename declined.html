@@ -2,6 +2,32 @@
 <head>
 <title>Odrzucone</title>
 <link rel="stylesheet" href="css/style.css">
+<script>
+    var host = "nb.2137.tk";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+<script>
+    function redirect_home() {
+    window.location = 'index.html';
+    window.close();
+    }
+    function open_window() {
+        window.location = 'join.html';
+        window.close();
+        }
+    
+        function close_window() {
+        window.location = 'declined.html';
+        window.close();
+        }
+
+        let popup = document.getElementById("popup");
+
+        function openpopup(){
+        popup.classList.add("open-popup");
+        }
+</script>
 <style>
 
 .center {
@@ -10,11 +36,6 @@
 }
 </style>
 </head>
-<script>
-var host = "nb.2137.tk";
-if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
-</script>
 <body>
     <div class="menu">
         <header>
@@ -30,18 +51,11 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 <div class="welcome">
 <h2>Musisz zaakceptować regulamin aby zagrać</h2>
 <input class="button_allow" type="submit" value="Wróc na strone główną" name="btn_close" id="btn_close" onclick="return redirect_home();" />
-<script>
-    function redirect_home() {
-    window.location = 'index.html';
-    window.close();
-    }
-
-</script>
 </div>
 <div class="footer">
-    <footer>
-        <p>Nightblock.2137.tk 2022<br>
-        <p>Zakaz kopiowania strony bez pozwolenia<p>
-        <a href="mailto:contact@azordon.cf">Kontact</a></p>
-      </footer>
+<footer>
+    <p>Nightblock.2137.tk 2022<br>
+    <p>Zakaz kopiowania strony bez pozwolenia<p>
+    <a href="mailto:contact@azordon.cf">Kontact</a></p>
+  </footer>
 </body>

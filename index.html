@@ -2,12 +2,12 @@
 <head>
 <title>NightBlock</title>
 <link rel="stylesheet" href="css/style.css">
-</head>
 <script>
-var host = "nb.2137.tk";
-if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
+    var host = "nb.2137.tk";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
 </script>
+</head>
 <body>
     <div class="menu">
         <header>
@@ -52,33 +52,36 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 <p>2.1 Sprawdzać bez podstawy </p>
 <input class="button_allow" type="submit" value="Akceptuje" name="btn_close" id="btn_close" onclick="return open_window();" />
 <input class="button_decline" type="submit" value="Nie Akceptuje" name="btn_close" id="btn_close" onclick="return close_window();" />
-<script>
-    function open_window() {
-    window.location = 'join.html';
-    window.close();
-    }
 
-    function close_window() {
-    window.location = 'declined.html';
-    window.close();
-    }
-</script>
 </div>
-
-<script>
-let popup = document.getElementById("popup");
-
-function openpopup(){
- popup.classList.add("open-popup");
-}
-
-</script>
 <div class="footer">
-<footer>
-    <p>Nightblock.2137.tk 2022<br>
-    <p>Zakaz kopiowania strony bez pozwolenia<p>
-    <a href="mailto:contact@azordon.cf">Kontact</a></p>
-  </footer>
+    <footer>
+        <p>Nightblock.2137.tk 2022<br>
+        <p>Zakaz kopiowania strony bez pozwolenia<p>
+        <a href="mailto:contact@azordon.cf">Kontact</a></p>
+      </footer>
+
 </div>
+<script>
+    function redirect_home() {
+    window.location = 'index.html';
+    window.close();
+    }
+    function open_window() {
+        window.location = 'join.html';
+        window.close();
+        }
+    
+        function close_window() {
+        window.location = 'declined.html';
+        window.close();
+        }
+
+        let popup = document.getElementById("popup");
+
+        function openpopup(){
+        popup.classList.add("open-popup");
+        }
+</script>
 </body>
 </head>
