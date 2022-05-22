@@ -22,6 +22,12 @@
 <div class="buttons">
 <button class="button_play" onclick="openpopup()">Zagraj Teraz</button>
 <button class="button_info" onclick="redirect_info()">Info</button>
+<script>
+function redirect_info() {
+    window.location = 'info.html';
+    window.close();
+    }
+</script>
 </div>
 <div class="popup" id="popup">
 <h2>Zanim zagrasz musisz zaakceptować regulamin</h2>
@@ -40,7 +46,13 @@
 <p>2.1 Sprawdzać bez podstawy </p>
 <input class="button_allow" type="submit" value="Akceptuje" name="btn_close" id="btn_close" onclick="return open_window();" />
 <input class="button_decline" type="submit" value="Nie Akceptuje" name="btn_close" id="btn_close" onclick="return close_window();" />
-
+<script>
+    let popup = document.getElementById("popup");
+    
+    function openpopup(){
+    popup.classList.add("open-popup");
+    }
+</script>
 </div>
 <div class="footer">
     <footer>
@@ -51,13 +63,6 @@
 
 </div>
 </body>
-<script>
-let popup = document.getElementById("popup");
-
-function openpopup(){
-popup.classList.add("open-popup");
-}
-</script>
 <script>
     function redirect_home() {
     window.location = 'index.html';
