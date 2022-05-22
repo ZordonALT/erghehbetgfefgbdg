@@ -22,13 +22,6 @@
 <div class="buttons">
 <button class="button_play" onclick="openpopup()">Zagraj Teraz</button>
 <button class="button_info" onclick="redirect_info()">Info</button>
-<script>
-    function redirect_info() {
-    window.location = 'info.html';
-    window.close();
-    }
-
-</script>
 </div>
 <div class="popup" id="popup">
 <h2>Zanim zagrasz musisz zaakceptować regulamin</h2>
@@ -69,6 +62,11 @@
     
         function close_window() {
         window.location = 'declined.html';
+        window.close();
+        }
+
+        function redirect_info() {
+        window.location = 'info.html';
         window.close();
         }
 
